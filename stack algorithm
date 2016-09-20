@@ -1,0 +1,16 @@
+#File Name: Stack Algorithm
+
+class stack:
+    def array(self):
+        for i in range(0,10):
+            S = []
+            x = int(raw_input("Enter the Number:"))
+            S.insert(i,x)
+            print 'The stack contains:',S
+
+    def push(self):
+        print "Want to add new Number:"
+        y = int(raw_input("The new Number is:"))
+s = stack()
+s.array()
+s.push()
