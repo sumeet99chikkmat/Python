@@ -1,0 +1,18 @@
+#File: Bubble sort algorithm
+print "How many data you want to enter"
+a = int(raw_input("Enter: "))
+data = []
+for i in range(0,a):
+    x = int(raw_input("Enter an integer:"))
+    data.insert(i,x)
+print data
+b = len(data)
+print "Sorting......."
+#data.sort()
+for i in range(1,b):
+    for j in range(1,b):
+       if data[j] < data[j - 1]:
+            c = data[j]
+            data[j] = data[j-1]
+            data[j-1] = c
+print data
